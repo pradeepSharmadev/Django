@@ -23,6 +23,7 @@ urlpatterns = [
 
     path('', views.home, name='home'),  # Home page URL
     path('about/', views.about, name='about'), # About page URL
+    path('dark/', views.dark, name='dark'), # Dark mode about page URL
     path('contact/', views.contact, name='contact'), # Contact page URL
     path('services/', views.services, name='services'),
 ]

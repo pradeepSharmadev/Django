@@ -1,0 +1,39 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>About Us</title>
+    <link rel="stylesheet" href="{% static 'css/about.css' %}" />
+  </head>
+  <body>
+    <section class="about-section">
+      <div class="container">
+        <div class="about-content">
+          <h1>About Us</h1>
+          <p>
+            Welcome to <strong>Explore Django</strong> — where innovation meets
+            inspiration. We are passionate about building digital experiences
+            that connect, engage, and empower.
+          </p>
+          <p>
+            Our team is made up of developers, designers, and dreamers who
+            believe in the power of technology to change the world. Whether it's
+            crafting seamless user interfaces or engineering scalable back-end
+            systems, we're all about delivering value through code and
+            creativity.
+          </p>
+          <p>Thank you for visiting — we're excited to have you here!</p>
+          <p>
+            <button class="btn-light">
+              <a class="a-light" href="{% url 'dark' %}" class="btn">Dark</a>
+            </button>
+          </p>
+        </div>
+        <div class="image-content">
+                <img src="{% static 'images/conatct.png' %}" alt="Our Team">
+            </div>
+      </div>
+    </section>
+  </body>
+</html>

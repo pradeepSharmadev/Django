@@ -7,7 +7,10 @@ def home(request):
     return render(request,'website/index.html')
 #Create about page view function
 def about(request):
-    return HttpResponse("This is the about page. Here you can Learn about us. This page is dedicated to About Page.")
+    return render(request, 'website/about.html')
+def dark(request):
+    return render(request, 'website/aboutdark.html')
+
 
 #Create contact page view function
 def contact(request):
