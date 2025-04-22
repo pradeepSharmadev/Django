@@ -1,0 +1,60 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Explore Django</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}" />
+  </head>
+  <body>
+    <header>
+      <h3>
+        Explore Django
+      </h1>
+    </header>
+
+    <h1 style="text-align: center; margin-top: 20px; font-size: 50px">
+      Welcome to the Explore Django Project!
+    </h1>
+    <p style="text-align: center; font-size: 20px">
+      This is a simple Django project to explore the framework.
+    </p>
+    <p style="text-align: center; font-size: 20px">
+      Feel free to explore the code and learn more about Django.
+    </p>
+
+    <div class="button-container">
+      <div class="button">
+      <a
+        href="{% url 'about' %}"
+        class="btn btn-primary"
+      >Learn More About Django</a>
+    </div>
+
+    <div class="button">
+      <a
+        href="{% url 'services' %}"
+        class="btn"
+        >Explore Our Services
+      </a>
+    </div>
+    <div class="button">
+      <a
+        href="{% url 'contact' %}"
+        class="btn"
+        >Contact Us</a
+      >
+    </div>
+  </div>
+    
+  <div class="image-container">
+    <div class="imageSizeFix">
+      <img class="image" src="{% static 'images/sunset.jpg' %}" alt="sunset">
+    </div>
+    <div class="imageSizeFix">    
+      <img class="image" src="https://img.freepik.com/free-photo/male-system-hacker-coding-security-program-pc-software-programming-firewall-data-encryption-server-using-computer-code-application-script-display_482257-46797.jpg?t=st=1745348264~exp=1745351864~hmac=0d076003febf2d3097cf76b2c87a4e681f56e3867e60b1e11fd4334d826e9718&w=1800" alt="forest">
+    </div>
+  </div>
+  </body>
+</html>
